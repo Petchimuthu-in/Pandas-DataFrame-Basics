@@ -1,0 +1,21 @@
+import pandas as pd
+data = {
+    "Name": ["Vijay", "Ajay", "Kiran", "Priya"],
+    "Age": [25, 28, 24, 26],
+    "City": ["Chennai", "Bangalore", "Mumbai", "Delhi"]
+}
+df = pd.DataFrame(data)
+print("Employee Details:")
+print(df)
+print("\nFirst 5 Records:")
+print(df.head())
+print("\nLast 5 Records:")
+print(df.tail())
+print("\nDataFrame Information:")
+df.info()
+print("\nStatistical Summary:")
+print(df.describe())
+print("\nNames:")
+print(df["Name"])
+print("\nEmployees with Age greater than 25:")
+print(df[df["Age"] > 25])
